@@ -14,18 +14,18 @@
 		
 			<atom:link href="https://nanumlearn.enochyu.com/books/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>LibreNotebook</title>
+				<link>https://nanumlearn.enochyu.com/books/26002/</link>
+				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://nanumlearn.enochyu.com/books/26002/</guid>
+				<description>&lt;p&gt;LibreNotebook is Enoch Yu&amp;rsquo;s giant and free personal notebook.&#xA;The purpose is to inspire and accelerate open education as a&#xA;way of returning the blessings that I received from public&#xA;educational resources.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>Enoch&#39;s Notebook: An Introduction to Linear Algebra</title>
 				<link>https://nanumlearn.enochyu.com/books/26001/</link>
 				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
 				<guid>https://nanumlearn.enochyu.com/books/26001/</guid>
 				<description>&lt;p&gt;Linear algebra is a foundational branch of mathematics that&#xA;primarily investigates in linear equations, vectors, and their&#xA;relations. The application of linear algebra is so immense that&#xA;numerous fields require foundational understanding of linear&#xA;algebra. For instance, it would not be possible to gain&#xA;profound understandings in machine learning and data science&#xA;without the basics of linear algebra. This collection of notes&#xA;discuss the essence of linear algebra in perspective of teaching.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>LibreNotebook</title>
-				<link>https://nanumlearn.enochyu.com/books/26002/</link>
-				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/books/26002/</guid>
-				<description>&lt;p&gt;LibreNotebook is a giant and free notebook that anyone can read&#xA;and modify. The purpose is to inspire and accelerate open education&#xA;as a way of returning the blessings that we received from public&#xA;educational resources.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
