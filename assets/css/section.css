@@ -53,3 +53,33 @@
 .page-head + .section {
   padding-top: clamp(48px, 6vw, 72px);
 }
+
+@media (min-width: 900px) {
+  .section.split .wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    align-items: start;
+    gap: 64px;
+  }
+
+  .section.split .split-head {
+    position: sticky;
+    top: calc(var(--header-h) + 48px);
+  }
+
+  .section.split .section-lead {
+    margin-bottom: 0;
+  }
+
+  .section.split .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section.split .card {
+    min-height: clamp(160px, 22svh, 220px);
+  }
+
+  .section.split .handout h3 {
+    font-size: 28px;
+  }
+}

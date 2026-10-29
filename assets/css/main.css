@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #fff;
   --bg-alt: #f5f5f7;
   --text: #1d1d1f;
@@ -9,25 +9,10 @@
   --highlight: #880808;
   --btn: #1d1d1f;
   --btn-text: #fff;
-  --nav: rgb(255 255 255 / 0.72);
   --nav-h: 60px;
+  --header-h: var(--nav-h);
   --radius: 18px;
   --ease: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000;
-    --bg-alt: #161617;
-    --text: #f5f5f7;
-    --muted: #a1a1a6;
-    --line: #38383b;
-    --accent: #6fcf86;
-    --highlight: #ef7f87;
-    --btn: #f5f5f7;
-    --btn-text: #1d1d1f;
-    --nav: rgb(22 22 23 / 0.72);
-  }
 }
 
 *,
@@ -43,15 +28,22 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 16px);
+  scroll-padding-top: calc(var(--header-h) + 16px);
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
   font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -0.011em;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex: 1;
 }
 
 img {
