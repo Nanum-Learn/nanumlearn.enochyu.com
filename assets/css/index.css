@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   align-content: center;
-  min-height: calc(100svh - var(--nav-h));
+  min-height: calc(100svh - var(--header-h));
   padding-block: 64px;
   text-align: center;
 }
@@ -12,14 +12,54 @@
   letter-spacing: -0.045em;
 }
 
-.hero em {
-  color: var(--highlight);
-  font-style: normal;
-}
-
 .hero .lead {
   max-width: 620px;
   margin: 28px auto 0;
+}
+
+.intro {
+  --p: 0;
+  height: calc(150svh - var(--header-h));
+}
+
+.intro .hero {
+  position: sticky;
+  top: var(--header-h);
+}
+
+.intro .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--text);
+  opacity: var(--p);
+  will-change: opacity;
+}
+
+.intro .wrap {
+  position: relative;
+}
+
+.motto {
+  display: grid;
+  overflow: hidden;
+}
+
+.motto span {
+  display: grid;
+  align-content: center;
+  grid-area: 1 / 1;
+  will-change: transform;
+}
+
+.motto span:first-child {
+  color: var(--text);
+  transform: translateY(calc(var(--p) * -100%));
+}
+
+.motto span:last-child {
+  color: var(--bg);
+  transform: translateY(calc((1 - var(--p)) * 100%));
 }
 
 .actions {
@@ -31,11 +71,6 @@
   margin-top: 32px;
 }
 
-.join {
-  margin-top: clamp(56px, 8vw, 88px);
-  text-align: left;
-}
-
 .join h2 {
   margin-bottom: 0.8rem;
   color: var(--accent);
@@ -44,10 +79,11 @@
 
 .join .stat {
   margin-block: auto;
+  align-self: center;
   color: var(--highlight);
   font-size: 56px;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   line-height: 1;
 }
 

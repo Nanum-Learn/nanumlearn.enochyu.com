@@ -53,11 +53,26 @@
   line-height: 1.2;
 }
 
+.zoom a.card > * {
+  transform-origin: left;
+  transition: transform var(--ease);
+}
+
 @media (hover: hover) {
   a.card:hover {
     border-color: var(--muted);
     box-shadow: 0 24px 48px -20px rgb(0 0 0 / 0.2);
     text-decoration: none;
     transform: translateY(-4px);
+  }
+
+  .zoom a.card:hover {
+    border-color: var(--line);
+    box-shadow: none;
+    transform: none;
+  }
+
+  .zoom a.card:hover > * {
+    transform: scale(1.05);
   }
 }

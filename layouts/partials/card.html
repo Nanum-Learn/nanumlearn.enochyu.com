@@ -1,6 +1,6 @@
 <a href="{{ .RelPermalink }}" class="card">
-  <p class="meta">{{ replace .Params.status "WIP" "In progress" }} · {{ .Date.Format "January 2006" }}{{ with .Params.classnum }} · {{ . }} classes{{ end }}</p>
   <h3>{{ .Title }}</h3>
+  <p class="meta">{{ replace .Params.status "WIP" "In progress" }} · {{ .Date.Format "January 2006" }}{{ with .Params.classnum }} · {{ . }} classes{{ end }}</p>
   <p>{{ .Description }}</p>
   <span class="cta more">Learn more</span>
 </a>

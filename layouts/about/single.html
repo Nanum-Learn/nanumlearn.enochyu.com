@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="hero statement">
-  <div class="wrap narrow">
+  <div class="wrap">
     <p class="eyebrow">Our Mission</p>
     <h1>
     To inspire global learners by returning knowledge and skills
@@ -10,21 +10,53 @@
 </section>
 
 <section class="section">
-  <div class="wrap narrow">
-    <h2 class="title">Founder</h2>
-    <div class="founder">
-      <img src="/img/avatar-founder.jpg" alt="avatar" width="200" height="200">
-      <div class="prose">
-        <h3>Enoch Yu</h3>
-        <p>Enoch is an ardent student who retains keen interest
-        in pure math, machine learning, and quantitative finance.
-        His previous accomplishments includes honorable mention
-        from Korean Mathematical Olympiad (~300 in South Korea)
-        and numerous awards from AMC. He currently dedicates his
-        focus on making YouTube videos on various math topics
-        and Nanum Learn. More on Enoch can be found in his
-        <a href="https://enochyu.com">personal website</a>.</p>
-      </div>
+  <div class="wrap">
+    <h2 class="title">Our Leadership</h2>
+    <div class="leaders">
+      <article class="leader">
+        <button type="button" aria-expanded="false" aria-controls="president">
+          <img src="/img/avatar-2627president.jpg" alt="" width="200" height="200">
+          <span><strong>Enoch Yu</strong><span class="role">
+            Founder<br>
+            President<br>
+            Nanumer
+          </span></span>
+        </button>
+        <div class="bio" id="president" hidden>
+          <p>Enoch is an ardent student who retains keen interest
+          in pure math, machine learning, and quantitative finance.
+          His previous accomplishments includes honorable mention
+          from Korean Mathematical Olympiad (~300 in South Korea)
+          and numerous awards from AMC. He currently dedicates his
+          focus on making YouTube videos on various math topics
+          and Nanum Learn. More on Enoch can be found in his
+          <a href="https://enochyu.com">personal website</a>.</p>
+        </div>
+      </article>
+      <article class="leader">
+        <button type="button" aria-expanded="false" aria-controls="vice-president">
+          <img src="/img/avatar-2627vice-president.png" alt="" width="200" height="200">
+          <span><strong>William Kang</strong><span class="role">
+            Vice President<br>
+            Nanumer
+          </span></span>
+        </button>
+        <div class="bio" id="vice-president" hidden>
+          <p></p>
+        </div>
+      </article>
+      <article class="leader">
+        <button type="button" aria-expanded="false" aria-controls="communication-officer">
+          <img src="/img/avatar-2627communication-officer.png" alt="" width="200" height="200">
+          <span><strong>Jian Choi</strong><span class="role">
+            Communication Officer<br>
+            Nanumer
+          </span></span>
+        </button>
+        <div class="bio" id="communication-officer" hidden>
+          <p></p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -144,9 +176,9 @@
 </section>
 
 <section class="section">
-  <div class="wrap narrow">
+  <div class="wrap">
     <h2 class="title">Begin</h2>
-    <div class="grid community">
+    <div class="grid community zoom">
       {{ partial "community.html" . }}
     </div>
   </div>
