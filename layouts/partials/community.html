@@ -1,0 +1,25 @@
+{{ with site.Params.social.youtube }}
+<a href="{{ . }}" class="card" target="_blank" rel="noopener">
+  <h3>YouTube</h3>
+  <p>Every recordings for the classes and related videos are
+  uploaded in this channel.</p>
+  <span class="cta ext">Subscribe</span>
+</a>
+{{ end }}
+{{ with site.Params.social.discord }}
+<a href="{{ . }}" class="card" target="_blank" rel="noopener">
+  <h3>Discord</h3>
+  <p>Join our server to discuss, share resources, and stay
+  updated!</p>
+  <span class="cta ext">Join</span>
+</a>
+{{ end }}
+{{ with site.Params.social.github }}
+<a href="{{ . }}" class="card" target="_blank" rel="noopener">
+  <h3>GitHub</h3>
+  <p>All source codes for related works are stored here.
+  Pull requests are welcomed!</p>
+  <span class="cta ext">Contribute</span>
+</a>
+{{ end }}
+

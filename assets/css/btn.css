@@ -1,32 +1,26 @@
-.btn1 {
+.btn {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
-  margin-top: 0.5rem;
-  max-height: 350px;
-  font-size: 1rem;
-  text-align: center;
-  background-color: transparent;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 980px;
+  background: var(--btn);
+  color: var(--btn-text);
   font-weight: 500;
-  transition: var(--transition);
-  background: #1b1b1b;
-  color: var(--bg-color);
-  border: 1px solid rgba(128, 128, 128, 0.65);
+  transition: opacity var(--ease);
 }
 
-.btn1:hover {
-  color: #1b1b1b;
-  background-color: transparent;
-  border: 1px solid rgba(128, 128, 128, 1);
+.btn:hover {
+  opacity: 0.8;
+  text-decoration: none;
 }
 
-.btn-books {
-  width: 100%;
+.more {
+  font-weight: 500;
 }
 
-.btn-handouts {
-  width: 49%;
+.more::after {
+  content: "\00a0\203a";
 }
 
-
+.ext::after {
+  content: "\00a0\2197";
+}

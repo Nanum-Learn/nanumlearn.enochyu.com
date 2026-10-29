@@ -1,83 +1,14 @@
 {{ define "main" }}
-<div class="page-header">
-  <h1>Handouts</h1>
-</div>
-<section class="toc-section">
-  <aside class="toc-sidebar">
-    <div class="toc">
-      <div class="toc-title">Table of Contents</div>
-      <nav>
-        <ul>
-          <li><a href="#handouts01">
-              Olympiad Topics ({{ len hugo.Data.handouts01 }})
-          </a></li>
-          <li><a href="#handouts02">
-              Fun Math ({{ len hugo.Data.handouts02 }})
-          </a></li>
-        </ul>
-      </nav>
-    </div>
-  </aside>
-
-  <section class="toc-section-content">
-    <section class="handouts-section">
-      <h2 id="handouts01">
-        Olympiad Topics
-        <small><small><small>
-        ({{ len hugo.Data.handouts01 }} Handouts)
-        </small></small></small>
-      </h2>
-      <div class="handouts-container">
-        {{ range hugo.Data.handouts01 }}
-          {{ $root := . }}
-          {{ range .links }}
-          <div class="handouts-card">
-            <h3>{{ .label }}</h3>
-            <h4>Date: {{ $root.date }}</h4>
-            <iframe src="{{ .pdf }}" width="100%" height="600px"></iframe>
-            <div class="handouts-link">
-              <a href="{{ .pdf | relURL }}"
-                 target="_blank" rel="noopener"
-                 class="btn1 btn-handouts">Open PDF</a>
-              <a href="{{ .tex | relURL }}"
-                 target="_blank" rel="noopener"
-                 class="btn1 btn-handouts">TeX (Git)</a>
-            </div>
-          </div>
-          {{ end }}
-        {{ end }}
-      </div>
-    </section>
-
-    <section class="handouts-section">
-      <h2 id="handouts02">
-        Fun Math
-        <small><small><small>
-        ({{ len hugo.Data.handouts02 }} Handouts)
-        </small></small></small>
-      </h2>
-      <div class="handouts-container">
-        {{ range hugo.Data.handouts02 }}
-          {{ $root := . }}
-          {{ range .links }}
-          <div class="handouts-card">
-            <h3>{{ .label }}</h3>
-            <h4>Date: {{ $root.date }}</h4>
-            <iframe src="{{ .pdf }}" width="100%" height="600px"></iframe>
-            <div class="handouts-link">
-              <a href="{{ .pdf | relURL }}"
-                 target="_blank" rel="noopener"
-                 class="btn1 btn-handouts">Open PDF</a>
-              <a href="{{ .tex | relURL }}"
-                 target="_blank" rel="noopener"
-                 class="btn1 btn-handouts">TeX (Git)</a>
-            </div>
-          </div>
-          {{ end }}
-        {{ end }}
-      </div>
-    </section>
-  </section>
+{{ partial "page-head.html" . }}
+{{ range slice (dict "id" "handouts01" "title" "Olympiad Topics") (dict "id" "handouts02" "title" "Fun Math") }}
+{{ $groups := index hugo.Data .id }}
+{{ $count := 0 }}
+{{ range $groups }}{{ $count = add $count (len .links) }}{{ end }}
+<section class="section" id="{{ .id }}">
+  <div class="wrap">
+    <h2 class="title">{{ .title }} <span>({{ $count }})</span></h2>
+    {{ partial "handouts.html" $groups }}
+  </div>
 </section>
 {{ end }}
-
+{{ end }}

@@ -1,6 +1,61 @@
 {{ define "main" }}
-  {{ partial "profile.html" . }}
-  <hr class="styled-hr">
-  {{ partial "preview.html" . }}
-{{ end }}
+<section class="hero">
+  <div class="wrap">
+    <h1>Nanum Learn</h1>
+    <p class="lead">"Learned to be Shared"</p>
+    <div class="join">
+      <h2>Join Us</h2>
+      <div class="grid community">
+        {{ partial "community.html" . }}
+        <div class="card">
+          <h3>Total Visits</h3>
+          <p class="stat" id="view-count">...</p>
+          <p class="meta">Counted by Cloudflare</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Free Books</h2>
+      <a href="/books/" class="more">Learn more</a>
+    </div>
+    <p class="section-lead">Below are free books written by the founder Enoch Yu.
+    For more information on the book and details on contribution,
+    please visit each page.</p>
+    <div class="grid">
+      {{ range where .Site.RegularPages "Section" "books" }}{{ partial "card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Free Handouts</h2>
+      <a href="/handouts/" class="more">Learn more</a>
+    </div>
+    <p class="section-lead">Below are selected free handouts. Please visit
+    <a href="/handouts/">here</a> to view all handouts.</p>
+    {{ partial "handouts.html" hugo.Data.handouts00 }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Free Classes</h2>
+      <a href="/classes/" class="more">Learn more</a>
+    </div>
+    <p class="section-lead">Below are the recordings of selected classes. Please visit
+    <a href="/classes/">here</a> to learn more about live classes
+    and past classes!</p>
+    <div class="grid">
+      {{ range where .Site.RegularPages "Section" "classes" }}{{ partial "card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

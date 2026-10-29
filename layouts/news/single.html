@@ -1,78 +1,12 @@
 {{ define "main" }}
-<div class="post-container">
-  <article class="post-content">
-    <h1 class="post-title">{{ .Title }}</h1>
-    <div class="post-meta">
-      Author: {{ .Params.Author }}
-      <span class="space">|</span>
-      <i class="far fa-calendar"></i> {{ .Date.Format "January 2, 2006" }}
-      <span class="space">|</span>
-      <i class="far fa-clock"></i> {{ .ReadingTime }} min read
-      <span class="space">|</span>
-      <i class="far fa-file-text"></i> {{ .WordCount }} words
-
-      {{ with .Params.categories }} 
-      <span class="space">|</span>
-      <i class="fas fa-folder"></i> 
-      {{ range first 1 . }}
-      <a href="{{ "categories" | relURL }}/{{ . | urlize }}/">{{ . }}</a>
-      {{ end }}
-      {{ end }}
-    </div>
-
-    <div class="post-body">
-      {{ .Content }}
-    </div>
-    {{ with .Params.tags }}
-    <div class="post-tags">
-      <strong>Tags:</strong>
-      {{ range . }}
-      <a href="{{ "tags" | relURL }}/{{ . | urlize }}/" class="stats-badge">{{ . }}</a>
-      {{ end }}
-    </div>
-    {{ end }}
-  </article>
-  <!-- {{ partial "toc.html" . }} -->
-</div>
-
-<section class="giscus"></section>
-<script src="https://giscus.app/client.js"
-        data-repo="enochyu-official/NanumLearn"
-        data-repo-id="R_kgDOT8Ajtg"
-        data-category="General"
-        data-category-id="DIC_kwDOT8Ajts4DDnw6"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<nav class="post-navigation">
-  <div class="nav-buttons">
-    {{ with .NextInSection }}
-    <a href="{{ .Permalink }}" class="nav-button">
-      <div class="nav-label">
-        Previous <i class="fas fa-arrow-left"></i>
-      </div>
-      <div class="nav-title">{{ .Title }}</div>
-    </a>
-    {{ end }}
-
-    {{ with .PrevInSection }}
-    <a href="{{ .Permalink }}" class="nav-button nav-next">
-      <div class="nav-label"><i class="fas fa-arrow-right"></i> Next</div>
-      <div class="nav-title">{{ .Title }}</div>
-    </a>
-    {{ else }}
-    <div></div>
-    {{ end }}
-  </div>
-</nav>
+<article class="wrap narrow post">
+  <header class="post-head">
+    <p class="eyebrow">News</p>
+    <h1>{{ .Title }}</h1>
+    <p class="meta">{{ .Params.author }} · {{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read · {{ .WordCount }} words</p>
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  {{ partial "comments.html" . }}
+  {{ partial "pager.html" . }}
+</article>
 {{ end }}
-
-

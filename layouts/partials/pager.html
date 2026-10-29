@@ -1,0 +1,6 @@
+{{ if or .NextInSection .PrevInSection }}
+<nav class="pager">
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span>Previous</span>{{ .Title }}</a>{{ end }}
+  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="next"><span>Next</span>{{ .Title }}</a>{{ end }}
+</nav>
+{{ end }}

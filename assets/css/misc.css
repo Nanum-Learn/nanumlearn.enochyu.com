@@ -1,73 +1,31 @@
-/* Footer */
+.hero.error h1 {
+  font-size: clamp(120px, 22vw, 220px);
+}
+
 .footer {
-  background: rgba(28, 28, 30, 0.95);
-  color: whitesmoke !important;
-  text-align: center;
-  padding: 1.7rem;
+  padding-block: 28px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-alt);
+  color: var(--muted);
+  font-size: 13px;
 }
 
-.footer a, 
-.footer a:link {
-  color: whitesmoke !important;
-  text-decoration: none;
-}
-
-.footer a:visited,
-.footer a:hover,
-.footer a:active {
-  color: #D3D3D3 !important;
-  text-decoration: none;
-}
-
-#popup {
-  display: none;
-  align-items: center;
-  text-align: left !important;
+.footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 3rem;
-  background: rgba(28, 28, 30, 0.95);
-  color: whitesmoke !important;
-  text-align: center;
-  font-size: 1.3rem;
-  padding: 1.7rem;
+  gap: 12px 24px;
 }
 
-#popup.show {
+.footer nav {
   display: flex;
+  gap: 20px;
 }
 
-#popup-button {
-  background: transparent;
-  color: whitesmoke;
-  border: none;
-  cursor: pointer;
-  font-size: 1.3rem;
+.footer a {
+  color: inherit;
 }
 
-/* 404 */
-.error-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  min-height: 90vh;
+.footer a:hover {
+  color: var(--text);
 }
-
-.error-page h1 {
-  font-size: 15vw;
-  color: var(--accent-color1);
-}
-
-.error-page p {
-  font-size: 2.1rem;
-  font-weight: 400;
-}
-
-.error-page a {
-  text-decoration: none;
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-
-

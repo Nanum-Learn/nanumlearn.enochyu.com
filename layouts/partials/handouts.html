@@ -1,0 +1,15 @@
+<div class="grid compact">
+  {{ range . }}
+  {{ $date := .date }}
+  {{ range .links }}
+  <div class="card handout">
+    <p class="meta">{{ $date }}</p>
+    <h3>{{ .label }}</h3>
+    <div class="links">
+      <a href="{{ .pdf }}" class="ext" target="_blank" rel="noopener">Open PDF</a>
+      <a href="{{ .tex }}" class="ext" target="_blank" rel="noopener">TeX (Git)</a>
+    </div>
+  </div>
+  {{ end }}
+  {{ end }}
+</div>

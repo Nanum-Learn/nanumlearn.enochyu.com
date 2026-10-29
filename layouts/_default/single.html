@@ -1,3 +1,39 @@
 {{ define "main" }}
-  {{ .Content }}
+{{ $date := .Date.Format "January 2, 2006" }}
+<article class="wrap detail">
+  <header class="detail-head">
+    <p class="eyebrow">{{ .Section | title }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+    <dl class="facts">
+      <dt>Author</dt>
+      <dd>{{ .Params.author }}</dd>
+      <dt>Status</dt>
+      <dd>{{ if eq .Params.status "WIP" }}In progress · Updated {{ $date }}{{ else }}{{ .Params.status }} · {{ $date }}{{ end }}</dd>
+      {{ with .Params.classnum }}
+      <dt>Classes</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      <dt>Total Views</dt>
+      <dd id="view-count">—</dd>
+    </dl>
+  </header>
+
+  <section class="block">
+    <h2>About</h2>
+    <div class="prose">{{ .Content }}</div>
+  </section>
+
+  <section class="block">
+    <h2>{{ if eq .Section "books" }}Access the Book{{ else }}Access Classes{{ end }}</h2>
+    <ul class="rows">
+      {{ range .Params.links }}
+      <li>{{ if .url }}<a href="{{ .url }}" class="ext" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}</li>
+      {{ end }}
+    </ul>
+  </section>
+
+  {{ partial "comments.html" . }}
+  {{ partial "pager.html" . }}
+</article>
 {{ end }}

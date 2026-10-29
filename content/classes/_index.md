@@ -1,5 +1,5 @@
 +++
-title = "Free Courses"
+title = "Free Classes"
 layout = "list"
 +++
 

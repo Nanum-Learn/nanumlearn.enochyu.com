@@ -1,26 +1,15 @@
 {{ define "main" }}
-<div class="page-header">
-  <h1>News</h1>
-</div>
-<br>
-<section class="news-section">
-  <div class="news-container">
-  {{ $currentYear := "" }}
-  {{ range .RegularPages.ByDate.Reverse }}
-    {{ $year := .Date.Format "2006" }}
-    {{ if ne $year $currentYear }}
-      <h2>{{ $year }}</h2>
-      {{ $currentYear = $year }}
+{{ partial "page-head.html" . }}
+<section class="section">
+  <div class="wrap">
+    {{ range .RegularPages.GroupByDate "2006" }}
+    <h2 class="year">{{ .Key }}</h2>
+    <ul class="rows">
+      {{ range .Pages }}
+      <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></a></li>
+      {{ end }}
+    </ul>
     {{ end }}
-    <div class="news-item">
-      <span class="news-meta">
-        <a href="{{ .Permalink }}" class="news-title">{{ .Title }}</a>
-        <span class="news-date">{{ .Date.Format "January 2, 2006" }}</span>
-      </span>
-    </div>
-  {{ end }}
+  </div>
 </section>
-<br>
 {{ end }}
-
-

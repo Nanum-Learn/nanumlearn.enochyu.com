@@ -1,0 +1,8 @@
+<header class="page-head">
+  <div class="wrap">
+    {{ $section := .Section | title }}
+    {{ if ne $section .Title }}<p class="eyebrow">{{ $section }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="lead">{{ . }}</div>{{ end }}
+  </div>
+</header>

@@ -1,10 +1,18 @@
 <footer class="footer">
-  <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      &copy; {{ now.Year }} Nanum Learn. All Rights Reserved.
-    </a>
+  <div class="wrap">
+    <p>&copy; {{ now.Year }} Nanum Learn. All Rights Reserved.</p>
+    <nav>
+      {{ with .Site.Params.social }}
+      <a href="{{ .youtube }}" target="_blank" rel="noopener">YouTube</a>
+      &bull;
+      <a href="{{ .discord }}" target="_blank" rel="noopener">Discord</a>
+      &bull;
+      <a href="{{ .github }}" target="_blank" rel="noopener">GitHub</a>
+      {{ end }}
+    </nav>
   </div>
 
+  {{ if .IsPage }}
   <script>
     MathJax = {
       options: {
@@ -26,5 +34,5 @@
     };
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+  {{ end }}
 </footer>
-

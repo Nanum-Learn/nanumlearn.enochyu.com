@@ -1,0 +1,54 @@
+.prose {
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.prose > * + * {
+  margin-top: 0.8em;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose h2 {
+  margin-top: 2em;
+  font-size: 30px;
+}
+
+.prose h3 {
+  margin-top: 1.6em;
+  font-size: 23px;
+}
+
+.prose ul {
+  padding-left: 1.3em;
+}
+
+.prose li ul,
+.prose li + li {
+  margin-top: 0.4em;
+}
+
+.prose img {
+  border-radius: 12px;
+}
+
+.prose code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--bg-alt);
+  font: 0.88em ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.prose pre {
+  overflow-x: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--bg-alt);
+}
+
+.prose pre code {
+  padding: 0;
+  background: none;
+}

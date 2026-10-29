@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 24px;
+}
+
+.grid.compact {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+}
+
+.grid.community {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
+}
+
+.card h3 {
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.cta {
+  margin-top: auto;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: auto;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.handout h3 {
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+@media (hover: hover) {
+  a.card:hover {
+    border-color: var(--muted);
+    box-shadow: 0 24px 48px -20px rgb(0 0 0 / 0.2);
+    text-decoration: none;
+    transform: translateY(-4px);
+  }
+}

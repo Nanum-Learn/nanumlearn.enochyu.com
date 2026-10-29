@@ -1,11 +1,11 @@
 {{ define "main" }}
-<div class="error-page">
-  <h1>404</h1>
-  <p>Page Not Found</p>
-  <br>
-  <br>
-  <a href="{{ .Site.BaseURL }}">Go Home</a>
-  <br>
-</div>
+<section class="hero error">
+  <div class="wrap">
+    <h1>404</h1>
+    <p class="lead">Page Not Found</p>
+    <div class="actions">
+      <a href="{{ .Site.BaseURL }}" class="btn">Go Home</a>
+    </div>
+  </div>
+</section>
 {{ end }}
-

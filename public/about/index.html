@@ -5,21 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="Enoch Yu">
-<meta name="keywords" content="Nanum Learn, Enoch Yu">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Nanum Learn" />
+<meta property="og:title" content="About" />
 
-<title>Nanum Learn</title>
+<title>About · Nanum Learn</title>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="manifest" href="/favicon/site.webmanifest">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-<link rel="canonical" href="https://nanumlearn.enochyu.com/" />
+<link rel="canonical" href="https://nanumlearn.enochyu.com/about/" />
 
 
-<link rel="stylesheet" href="/css/bundle.min.84eece0aa8f8af041aca88638007ef73285f6210fb1101d519bcfcda7883815b.css" integrity="sha256-hO7OCqj4rwQayohjgAfvcyhfYhD7EQHVGbz82niDgVs=">
+<link rel="stylesheet" href="/css/bundle.min.54f1cb4d663eaf800e42c1c3662374ec7190eb1b9e77a029459907d8c1e907e5.css" integrity="sha256-VPHLTWY&#43;r4AOQsHDZiN07HGQ6xued6ApRZkH2MHpB&#43;U=">
 
 <script type="application/ld+json">
 {
@@ -33,54 +30,51 @@
 
 </head>
 <body>
-  <header>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="/" class="nav-logo"><img src="/logo/logo-inline.svg"></a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <svg class="icon-burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" style="color: rgb(27, 18, 18); opacity: 0.8; transform: rotate(0deg);" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z" ></path></svg>
-        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" style="color: rgb(27, 18, 18); opacity: 0.8; transform: rotate(0deg);" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-dasharray="12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="12;0" ></animate></path></svg>
-      </button>
-
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="/books" class="nav-link ">Books</a></li>
-        <li><a href="/handouts" class="nav-link ">Handouts</a></li>
-        <li><a href="/classes" class="nav-link ">Classes</a></li>
-        <li><a href="/news" class="nav-link ">News</a></li>
-        <li><a href="/about" class="nav-link active">About</a></li>
-      </ul>
-    </div>
+  <div class="banner" id="banner" hidden>
+  We are still in beta! Please feel free to explore and leave
+  any feedback through our <a href="https://discord.gg/6ABSqUf63" target="_blank" rel="noopener">discord server</a> :))
+  <button type="button" aria-label="Close">&#x2715;</button>
+</div>
+<header class="nav">
+  <nav class="wrap nav-inner">
+    <a href="/" class="nav-logo"><img src="/logo/logo-inline.svg" alt="Nanum Learn" width="1000" height="365"></a>
+    <button type="button" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <ul class="nav-menu">
+      
+      <li><a href="/books/">Books</a></li>
+      
+      <li><a href="/handouts/">Handouts</a></li>
+      
+      <li><a href="/classes/">Classes</a></li>
+      
+      <li><a href="/news/">News</a></li>
+      
+      <li><a href="/about/" aria-current="page">About</a></li>
+      
+    </ul>
   </nav>
-  <div id="popup">
-    <span>We are still in beta! Please feel free to explore and leave
-      any feedback through our discord server :))</span>
-    <button id="popup-button" onclick="closePopup()">&#x2715;</button>
-  </div>
 </header>
-
 
 
   <main>
     
-<section class="about-section" id="about-mission">
-  <div class="about-container" id="about-container-mission">
-    <h2>Our Mission</h2>
-    <p>
+<section class="hero statement">
+  <div class="wrap narrow">
+    <p class="eyebrow">Our Mission</p>
+    <h1>
     To inspire global learners by returning knowledge and skills
     we have received.
-    </p>
+    </h1>
   </div>
 </section>
-<hr class="styled-hr">
-<section class="about-section" id="about-founder">
-  <div class="about-container">
-    <h2>Founder</h2>
-    <div id="about-founder-card">
-      <img src="/img/avatar-founder.jpg" id="desktop-founder" alt="avatar">
-      <div id="about-founder-description">
+
+<section class="section">
+  <div class="wrap narrow">
+    <h2 class="title">Founder</h2>
+    <div class="founder">
+      <img src="/img/avatar-founder.jpg" alt="avatar" width="200" height="200">
+      <div class="prose">
         <h3>Enoch Yu</h3>
-        <img src="/img/avatar-founder.jpg" id="mobile-founder" alt="avatar">
         <p>Enoch is an ardent student who retains keen interest
         in pure math, machine learning, and quantitative finance.
         His previous accomplishments includes honorable mention
@@ -94,152 +88,150 @@
   </div>
 </section>
 
-<section class="about-section" id="about-nanumlearn">
-  <div class="about-container">
-    <h2>About Nanum Learn</h2>
-    <p>
-    Nanum Learn is an educational initiative that aims to
-    accelerate open learning by providing original and accessible
-    resources such as books, handouts, and free classes.
-    We aim to make the contents and resources more accessible
-    by distributing the works under CC BY 4.0. Under the permissive
-    license, the users are allowed to share and adapt for any
-    purpose as long as an appropriate credit is given. For more
-    information the use, please visit
-    <a href="https://github.com/enochyu-official/NanumLearn/blob/main/LICENSE">LICENSE</a>.
-    </p>
-    <h3>What We Do</h3>
-    <p>
-    Nanum Learn provides numerous open resources and opportunities
-    such as free books, handouts, and past/current classes. We create
-    different open resources for numerous purposes including, but
-    not limited to individual study and teaching. Moreover through
-    open and live classes, we wish to return the knowledge and skills
-    we received to the world just as we learned from public resources.
-    </p>
-    <h3>Motivation</h3>
-    <p>
-    Nanum Learn started with a spark and hope to show personal
-    appreciations. When I first started studying for math olympiads,
-    I was surprised to know that there aren't lots of free resources
-    for the high division of national math olympiad. Open resources
-    were either for middle school round or preview for paid resources
-    with high prices. Therefore, I decided to study problems from
-    different countries. There, I was blessed by free handouts that
-    were just there in the internet! The handouts that could have been
-    hidden behind high paywall were freely shared for countless students
-    just like me.
-    <br><br>
-    Maybe the experience is personal. However, I believe there are
-    thousands and millions of others who experienced similar
-    situations. This spark for gratitude let me start creating
-    open resources that were not yet available, or yet to be more
-    polished. Again, I wish to share my gratitude towards all
-    contributors to open knowledge, and sincerely wishes that Nanum
-    Learn can be a platform for open resources that inspires
-    global learners like me.
-    </p>
+<section class="section">
+  <div class="wrap narrow">
+    <h2 class="title">About Nanum Learn</h2>
+    <div class="prose">
+      <p>
+      Nanum Learn is an educational initiative that aims to
+      accelerate open learning by providing original and accessible
+      resources such as books, handouts, and free classes.
+      We aim to make the contents and resources more accessible
+      by distributing the works under CC BY 4.0. Under the permissive
+      license, the users are allowed to share and adapt for any
+      purpose as long as an appropriate credit is given. For more
+      information the use, please visit
+      <a href="https://github.com/Nanum-Learn/nanumlearn.enochyu.com/blob/main/LICENSE">LICENSE</a>.
+      </p>
+      <h3>What We Do</h3>
+      <p>
+      Nanum Learn provides numerous open resources and opportunities
+      such as free books, handouts, and past/current classes. We create
+      different open resources for numerous purposes including, but
+      not limited to individual study and teaching. Moreover through
+      open and live classes, we wish to return the knowledge and skills
+      we received to the world just as we learned from public resources.
+      </p>
+      <h3>Motivation</h3>
+      <p>
+      Nanum Learn started with a spark and hope to show personal
+      appreciations. When I first started studying for math olympiads,
+      I was surprised to know that there aren't lots of free resources
+      for the high division of national math olympiad. Open resources
+      were either for middle school round or preview for paid resources
+      with high prices. Therefore, I decided to study problems from
+      different countries. There, I was blessed by free handouts that
+      were just there in the internet! The handouts that could have been
+      hidden behind high paywall were freely shared for countless students
+      just like me.
+      </p>
+      <p>
+      Maybe the experience is personal. However, I believe there are
+      thousands and millions of others who experienced similar
+      situations. This spark for gratitude let me start creating
+      open resources that were not yet available, or yet to be more
+      polished. Again, I wish to share my gratitude towards all
+      contributors to open knowledge, and sincerely wishes that Nanum
+      Learn can be a platform for open resources that inspires
+      global learners like me.
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="about-section" id="about-contribute">
-  <div class="about-container">
-    <h2>Contribute</h2>
-    <p>
-    First, thank you so much for your interest and your time.
-    As you may have noticed from our purpose, we welcome and
-    encourage contributions. That being said, no one is "qualified"
-    to contribute to Nanum Learn. If you have the passion, we value
-    all contributions from any skill levels and background!
-    </p>
-    <h3>How to Contribute</h3>
-    <p>
-    As a growing initiative, we have multiple areas where we look
-    forward for community contributions. The list of areas is available
-    <a href="https://github.com/enochyu-official/NanumLearn/blob/main/CONTRIBUTING.md">here</a>.
-    If you have programming background, please open an issue or submit a pull request
-    in our repository hosted in GitHub. If you are less familiar with Git, you can also
-    share your feedback through our Discord server.
-    <br><br>
-    There will be no Contributor License Agreement. However, contributing
-    will imply that you abide with our rules in
-    <a href="https://github.com/enochyu-official/NanumLearn/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
-    and AI Policy below. Thank you again for your time and efforts!
-    </p>
-    <h3>AI Policy</h3>
-    <p>
-    We believe that AI is a useful tool that can help us in numerous
-    ways, and we actually encourage the use of AI for assistance.
-    However, we value transparency, credits, and quality. Many AI
-    generated contents fails to receive proper credits and quality
-    checks. We will not and do not have the capacity to check if
-    each contribution is AI generated. However, for transparency
-    and trust between contributors, please disclose if your contribution
-    is AI generated (no need for AI assistance). Below are some examples
-    of different AI usage.
-    <ul>
-      <li>
-        Examples of AI Assisted contents includes, but are not limited to:
-      </li>
+<section class="section">
+  <div class="wrap narrow">
+    <h2 class="title">Contribute</h2>
+    <div class="prose">
+      <p>
+      First, thank you so much for your interest and your time.
+      As you may have noticed from our purpose, we welcome and
+      encourage contributions. That being said, no one is "qualified"
+      to contribute to Nanum Learn. If you have the passion, we value
+      all contributions from any skill levels and background!
+      </p>
+      <h3>How to Contribute</h3>
+      <p>
+      As a growing initiative, we have multiple areas where we look
+      forward for community contributions. The list of areas is available
+      <a href="https://github.com/Nanum-Learn/nanumlearn.enochyu.com/blob/main/CONTRIBUTING.md">here</a>.
+      If you have programming background, please open an issue or submit a pull request
+      in our repository hosted in GitHub. If you are less familiar with Git, you can also
+      share your feedback through our Discord server.
+      </p>
+      <p>
+      There will be no Contributor License Agreement. However, contributing
+      will imply that you abide with our rules in
+      <a href="https://github.com/Nanum-Learn/nanumlearn.enochyu.com/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+      and AI Policy below. Thank you again for your time and efforts!
+      </p>
+      <h3>AI Policy</h3>
+      <p>
+      We believe that AI is a useful tool that can help us in numerous
+      ways, and we actually encourage the use of AI for assistance.
+      However, we value transparency, credits, and quality. Many AI
+      generated contents fails to receive proper credits and quality
+      checks. We will not and do not have the capacity to check if
+      each contribution is AI generated. However, for transparency
+      and trust between contributors, please disclose if your contribution
+      is AI generated (no need for AI assistance). Below are some examples
+      of different AI usage.
+      </p>
       <ul>
-        <li>Spell checks for original contents</li>
-        <li>Checking whether the content is correct</li>
-        <li>Debugging any programming errors</li>
-      </ul>
-      <li>
-        Examples of AI Generated contents include, but are not limited to:
-      </li>
-      <ul>
-        <li>Using AI to generate contents and paraphrasing afterwards</li>
         <li>
-          Using AI as a "search engine" as a sole way to find contents
-          like definitions and theorems to include in the notes
+          Examples of AI Assisted contents includes, but are not limited to:
+          <ul>
+            <li>Spell checks for original contents</li>
+            <li>Checking whether the content is correct</li>
+            <li>Debugging any programming errors</li>
+          </ul>
         </li>
-        <li>Using AI to rewrite a large portion of the original contents</li>
+        <li>
+          Examples of AI Generated contents include, but are not limited to:
+          <ul>
+            <li>Using AI to generate contents and paraphrasing afterwards</li>
+            <li>
+              Using AI as a "search engine" as a sole way to find contents
+              like definitions and theorems to include in the notes
+            </li>
+            <li>Using AI to rewrite a large portion of the original contents</li>
+          </ul>
+        </li>
       </ul>
-    </p>
+    </div>
   </div>
 </section>
 
-<section class="about-section" id="about-begin">
-  <div class="about-container">
-    <h2>Begin</h2>
-    <div id="about-join-container">
-      <div class="about-join-cards">
-        
-        <h3><a href="https://www.youtube.com/@enochyu_official" target="_blank" rel="noopener"
-               aria-label="YouTube"><i class="fab fa-youtube"></i>
-               YouTube</a></h3>
-        <p>Every recordings for the classes and related videos
-           are uploaded in this channel.</p>
-        <a href="https://www.youtube.com/@enochyu_official" target="_blank" rel="noopener"
-           aria-label="Youtube" class="btn1">Subscribe</a>
-        
-      </div>
-
-      <div class="about-join-cards">
-        
-        <h3><a href="https://discord.gg/6ABSqUf63" target="_blank" rel="noopener"
-               aria-label="Discord"><i class="fab fa-discord"></i>
-               Discord</a></h3>
-        <p>Join our server to discuss, share resources, and stay
-        updated!</p>
-        <a href="https://discord.gg/6ABSqUf63" target="_blank" rel="noopener"
-           aria-label="Discord" class="btn1">Join</a>
-        
-      </div>
+<section class="section">
+  <div class="wrap narrow">
+    <h2 class="title">Begin</h2>
+    <div class="grid community">
       
-      <div class="about-join-cards">
-        
-        <h3><a href="https://github.com/enochyu-official/NanumLearn" target="_blank" rel="noopener"
-               aria-label="GitHub"><i class="fab fa-github"></i>
-               GitHub</a></h3>
-        <p>All source codes for related works are stored here.
-            Pull requests are welcomed!</p>
-        <a href="https://github.com/enochyu-official/NanumLearn" target="_blank" rel="noopener"
-           aria-label="GitHub" class="btn1">Contribute</a>
-        
-      </div>
+<a href="https://www.youtube.com/@enochyu_official" class="card" target="_blank" rel="noopener">
+  <h3>YouTube</h3>
+  <p>Every recordings for the classes and related videos are
+  uploaded in this channel.</p>
+  <span class="cta ext">Subscribe</span>
+</a>
+
+
+<a href="https://discord.gg/6ABSqUf63" class="card" target="_blank" rel="noopener">
+  <h3>Discord</h3>
+  <p>Join our server to discuss, share resources, and stay
+  updated!</p>
+  <span class="cta ext">Join</span>
+</a>
+
+
+<a href="https://github.com/Nanum-Learn" class="card" target="_blank" rel="noopener">
+  <h3>GitHub</h3>
+  <p>All source codes for related works are stored here.
+  Pull requests are welcomed!</p>
+  <span class="cta ext">Contribute</span>
+</a>
+
+
+
     </div>
   </div>
 </section>
@@ -247,35 +239,21 @@
   </main>
   
   <footer class="footer">
-  <div>
-    <a href="" target="_blank" rel="noopener noreferrer">
-      &copy; 2026 Nanum Learn. All Rights Reserved.
-    </a>
+  <div class="wrap">
+    <p>&copy; 2026 Nanum Learn. All Rights Reserved.</p>
+    <nav>
+      
+      <a href="https://www.youtube.com/@enochyu_official" target="_blank" rel="noopener">YouTube</a>
+      &bull;
+      <a href="https://discord.gg/6ABSqUf63" target="_blank" rel="noopener">Discord</a>
+      &bull;
+      <a href="https://github.com/Nanum-Learn" target="_blank" rel="noopener">GitHub</a>
+      
+    </nav>
   </div>
 
-  <script>
-    MathJax = {
-      options: {
-        menuOptions: {
-          settings: {
-            enrich: false,
-            collapsible: false,
-            speech: false,
-            braille: false,
-            assistiveMml: false,
-          }
-        }
-      },
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['\\[', '\\]'], ['$$', '$$']]
-      },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+  
 </footer>
-
 
   
   
