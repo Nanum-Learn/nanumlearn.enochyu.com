@@ -25,6 +25,14 @@ banner.querySelector('button').addEventListener('click', () => {
   sessionStorage.setItem('bannerClosed', 'true');
 });
 
+document.querySelectorAll('.leader button').forEach(button => {
+  button.addEventListener('click', () => {
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', open);
+    document.getElementById(button.getAttribute('aria-controls')).hidden = !open;
+  });
+});
+
 const intro = document.querySelector('.intro');
 
 if (intro) {

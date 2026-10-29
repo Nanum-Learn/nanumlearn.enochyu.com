@@ -12,11 +12,6 @@
   letter-spacing: -0.045em;
 }
 
-.hero em {
-  color: var(--highlight);
-  font-style: normal;
-}
-
 .hero .lead {
   max-width: 620px;
   margin: 28px auto 0;
@@ -84,10 +79,11 @@
 
 .join .stat {
   margin-block: auto;
+  align-self: center;
   color: var(--highlight);
   font-size: 56px;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   line-height: 1;
 }
 
