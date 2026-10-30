@@ -11,7 +11,8 @@
   </main>
   
   {{ partial "footer.html" . }}
-  
+  {{ partial "popup.html" . }}
+
   {{ $script := resources.Get "js/script.js" }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ $counter := resources.Get "js/counter.js" }}

@@ -16,15 +16,6 @@ new ResizeObserver(() => {
   document.documentElement.style.setProperty('--header-h', `${nav.offsetHeight}px`);
 }).observe(nav);
 
-const banner = document.getElementById('banner');
-
-if (sessionStorage.getItem('bannerClosed') !== 'true') banner.hidden = false;
-
-banner.querySelector('button').addEventListener('click', () => {
-  banner.hidden = true;
-  sessionStorage.setItem('bannerClosed', 'true');
-});
-
 document.querySelectorAll('.leader button').forEach(button => {
   button.addEventListener('click', () => {
     const open = button.getAttribute('aria-expanded') !== 'true';
@@ -82,7 +73,7 @@ if (intro) {
   };
 
   const hold = (e, down) => {
-    if (nav.classList.contains('open')) return;
+    if (nav.classList.contains('open') || document.querySelector('.popup[open]')) return;
     if (!held && target === null && !free && (down ? origin < d - 1 : origin > 1 && origin < d + 1)) {
       glide(down ? d : 0);
       held = true;

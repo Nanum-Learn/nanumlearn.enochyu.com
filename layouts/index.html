@@ -40,28 +40,28 @@
   <div class="wrap">
     <div class="split-head">
       <div class="section-head">
-        <h2>Free Handouts</h2>
-        <a href="/handouts/" class="more">Learn more</a>
+        <h2>Free Classes</h2>
+        <a href="/classes/" class="more">Learn more</a>
       </div>
-      <p class="section-lead">Below are selected free handouts. Please visit
-      <a href="/handouts/">here</a> to view all handouts.</p>
+      <p class="section-lead">Here are the recordings of selected classes. Please visit
+      <a href="/classes/">here</a> to learn more about live classes
+      and past classes!</p>
     </div>
-    {{ partial "handouts.html" hugo.Data.handouts00 }}
+    <div class="grid">
+      {{ range where .Site.RegularPages "Section" "classes" }}{{ partial "card.html" . }}{{ end }}
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <h2>Free Classes</h2>
-      <a href="/classes/" class="more">Learn more</a>
+      <h2>Free Handouts</h2>
+      <a href="/handouts/" class="more">Learn more</a>
     </div>
-    <p class="section-lead">Below are the recordings of selected classes. Please visit
-    <a href="/classes/">here</a> to learn more about live classes
-    and past classes!</p>
-    <div class="grid">
-      {{ range where .Site.RegularPages "Section" "classes" }}{{ partial "card.html" . }}{{ end }}
-    </div>
+    <p class="section-lead">Below are selected free handouts. Please visit
+    <a href="/handouts/">here</a> to view all handouts.</p>
+    {{ partial "handouts.html" hugo.Data.handouts00 }}
   </div>
 </section>
 {{ end }}

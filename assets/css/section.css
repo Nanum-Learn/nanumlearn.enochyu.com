@@ -78,8 +78,4 @@
   .section.split .card {
     min-height: clamp(160px, 22svh, 220px);
   }
-
-  .section.split .handout h3 {
-    font-size: 28px;
-  }
 }

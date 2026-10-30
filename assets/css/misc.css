@@ -5,8 +5,8 @@
 .footer {
   padding-block: 28px;
   border-top: 1px solid var(--line);
-  background: var(--bg-alt);
-  color: var(--muted);
+  background: var(--accent);
+  color: color-mix(in srgb, var(--bg) 75%, var(--accent));
   font-size: 13px;
 }
 
@@ -27,5 +27,9 @@
 }
 
 .footer a:hover {
-  color: var(--text);
+  color: var(--bg);
+}
+
+.footer a:focus-visible {
+  outline-color: var(--bg);
 }

@@ -1,25 +1,3 @@
-.banner {
-  position: relative;
-  padding: 12px 48px;
-  background: var(--bg-alt);
-  color: var(--muted);
-  font-size: 14px;
-  text-align: center;
-}
-
-.banner button {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  padding: 8px;
-  border: 0;
-  background: none;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-
 .nav {
   position: sticky;
   top: 0;
