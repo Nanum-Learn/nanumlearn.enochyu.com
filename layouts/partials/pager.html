@@ -1,6 +1,12 @@
-{{ if or .NextInSection .PrevInSection }}
+{{ $prev := .NextInSection }}
+{{ $next := .PrevInSection }}
+{{ if in (slice "news" "classes") .Section }}
+{{ $prev = .PrevInSection }}
+{{ $next = .NextInSection }}
+{{ end }}
+{{ if or $prev $next }}
 <nav class="pager">
-  {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span>Previous</span>{{ .Title }}</a>{{ end }}
-  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="next"><span>Next</span>{{ .Title }}</a>{{ end }}
+  {{ with $prev }}<a href="{{ .RelPermalink }}"><span>Previous</span>{{ .Title }}</a>{{ end }}
+  {{ with $next }}<a href="{{ .RelPermalink }}" class="next"><span>Next</span>{{ .Title }}</a>{{ end }}
 </nav>
 {{ end }}

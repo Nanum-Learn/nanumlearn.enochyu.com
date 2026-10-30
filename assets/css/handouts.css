@@ -1,0 +1,24 @@
+.rows .handout-row {
+  flex-wrap: wrap;
+  gap: 4px 24px;
+}
+
+.handout-end {
+  display: flex;
+  gap: 24px;
+}
+
+.rows .handout-end a {
+  color: var(--highlight);
+}
+
+.rows .handout-end a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .handout-end time {
+    min-width: 9em;
+    text-align: right;
+  }
+}

@@ -2,6 +2,7 @@
 author: Enoch Yu
 title: "We are here!"
 date: 2026-08-16
+aliases: ["/news/26005/"]
 ---
 
 Hi there! As the initial post, I hope to provide a glimpse on what

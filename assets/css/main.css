@@ -26,6 +26,12 @@
   display: none !important;
 }
 
+p, a, ul, li, dl, td, div, h1, h2, h3, h4 {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 16px);
@@ -53,7 +59,7 @@ img {
 }
 
 a {
-  color: var(--accent);
+  color: var(--highlight);
   text-decoration: none;
 }
 
@@ -101,7 +107,7 @@ h3 {
 }
 
 .meta {
-  color: var(--muted);
+  color: var(--accent);
   font-size: 14px;
 }
 

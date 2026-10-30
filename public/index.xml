@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 16 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://nanumlearn.enochyu.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>NL01CHEM01: Introduction to Chemistry for Middle School Students</title>
+				<link>https://nanumlearn.enochyu.com/classes/nl01chem01/</link>
+				<pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://nanumlearn.enochyu.com/classes/nl01chem01/</guid>
+				<description>&lt;p&gt;NL01CHEM01 is our first Nanum session, led by our Vice President&#xA;William Kang, for 6th to 9th grade students interested in exploring&#xA;chemistry. Sessions are held every Tuesday 10 PM - 11 PM (GMT+9) for&#xA;four weeks, starting November 3rd.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Week 1:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Classifying matter, physical and chemical changes, and density.&lt;/li&gt;&#xA;&lt;li&gt;Atomic structure, isotopes, and ions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Week 2:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Periodic table patterns, valence electrons, and common ion charges.&lt;/li&gt;&#xA;&lt;li&gt;Ionic and covalent bonding, chemical formulas, and simple Lewis structures.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Week 3:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Chemical reactions, balancing equations, and conservation of mass.&lt;/li&gt;&#xA;&lt;li&gt;The mole, molar mass, and grams-to-moles conversions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Week 4:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Solutions, concentration, and dilution.&lt;/li&gt;&#xA;&lt;li&gt;Review and application through an integrated chemistry problem.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
 			<item>
 				<title>LibreNotebook</title>
 				<link>https://nanumlearn.enochyu.com/books/26002/</link>
@@ -22,9 +29,9 @@
 			</item>
 			<item>
 				<title>Problem of the Day: 100 Problems for 100 Days</title>
-				<link>https://nanumlearn.enochyu.com/classes/26004/</link>
+				<link>https://nanumlearn.enochyu.com/classes/archive26/</link>
 				<pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/classes/26004/</guid>
+				<guid>https://nanumlearn.enochyu.com/classes/archive26/</guid>
 				<description>&lt;p&gt;As the name suggests, &amp;ldquo;Problem of the Day: 100 Problem for 100 Days&amp;rdquo;&#xA;solves 100 olympiad problems from diverse sources. The problems&#xA;are mixed with hard and easier problems with sources varying from&#xA;famous olympiads to original problems. The links to the handwritten&#xA;PDF files and video solutions for each problem can be found in&#xA;the overview PDF below.&lt;/p&gt;</description>
 			</item>
 			<item>
@@ -36,23 +43,30 @@
 			</item>
 			<item>
 				<title>2025 Introduction to AMC 8</title>
-				<link>https://nanumlearn.enochyu.com/classes/25001/</link>
+				<link>https://nanumlearn.enochyu.com/classes/archive25-1/</link>
 				<pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/classes/25001/</guid>
+				<guid>https://nanumlearn.enochyu.com/classes/archive25-1/</guid>
 				<description>&lt;p&gt;The four live classes introduces competition style math to elementary&#xA;students with problems and concepts from AMC 8. Handouts and&#xA;recordings can be found below.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>2025 Introduction to AMC 10/12</title>
-				<link>https://nanumlearn.enochyu.com/classes/25002/</link>
+				<link>https://nanumlearn.enochyu.com/classes/archive25-2/</link>
 				<pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/classes/25002/</guid>
+				<guid>https://nanumlearn.enochyu.com/classes/archive25-2/</guid>
 				<description>&lt;p&gt;I have lead three classes as a member of a former math group Happy&#xA;Math Virus for middle and high school students interested in starting&#xA;competition math. The recordings of problem sessions and its slides&#xA;are available below. Preview homeworks given to students are also&#xA;available below.&lt;/p&gt;</description>
 			</item>
 			<item>
+				<title>Join our first Nanum Session on November 3rd!</title>
+				<link>https://nanumlearn.enochyu.com/news/nl01chem01/</link>
+				<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://nanumlearn.enochyu.com/news/nl01chem01/</guid>
+				<description>&lt;p&gt;Hi, we are very excited to share that we will be hosting our first&#xA;Nanum session starting November 3rd! NL01CHEM01 will be lead&#xA;by our Vice President William Kang, and we have very excited&#xA;activities prepared as well!&lt;/p&gt;&#xA;&lt;p&gt;We hope to see 6th to 9th grade students interested in exploring&#xA;more into Cheimstry. Our sessions will be held &lt;strong&gt;every Tuesday&#xA;10 PM - 11 PM (GMT+9) for four weeks&lt;/strong&gt;. Below are some of the&#xA;contents that we will discuss in our session.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>We are here!</title>
-				<link>https://nanumlearn.enochyu.com/news/26005/</link>
+				<link>https://nanumlearn.enochyu.com/news/init/</link>
 				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/news/26005/</guid>
+				<guid>https://nanumlearn.enochyu.com/news/init/</guid>
 				<description>&lt;p&gt;Hi there! As the initial post, I hope to provide a glimpse on what&#xA;we have been doing so far and few improvements that will be made as&#xA;we progress.&lt;/p&gt;&#xA;&lt;p&gt;After the initialization and formalizing our purpose and goals,&#xA;I have been making and designing this website. There are improvements&#xA;to be made in the website, but we hope to get them as we progress.&#xA;With the empty website, I have been adding the resources that I have&#xA;created and that I am working on right now as the initial start.&#xA;We also have been sharing our ideas and the purpose of Nanum Learn&#xA;with others to receive feedback and improve. These are the works that&#xA;have been done so far before the initial release.&lt;/p&gt;</description>
 			</item>
 	</channel>

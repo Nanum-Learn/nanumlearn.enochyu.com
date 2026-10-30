@@ -22,7 +22,7 @@
   const status = el('p', { className: 'comments-note', role: 'status' }, 'Loading comments…');
   const list = el('ol', { className: 'comment-list' });
   const replying = el('p', { className: 'comment-replying', hidden: true });
-  const name = el('input', { id: 'comment-name', name: 'name', maxLength: 40, autocomplete: 'nickname', placeholder: 'Anonymous' });
+  const name = el('input', { id: 'comment-name', name: 'name', maxLength: 40, autocomplete: 'nickname', placeholder: '' });
   const text = el('textarea', { id: 'comment-text', name: 'text', maxLength: 2000, rows: 4, required: true });
   const trap = el('input', { name: 'website', tabIndex: -1, autocomplete: 'off' });
   const check = el('div', { className: 'comment-check' });
@@ -39,7 +39,7 @@
     check,
     el('div', { className: 'comment-actions' }, submit, cancel),
     formStatus,
-    el('p', { className: 'comments-note' }, 'Comments are public and stored on GitHub. Please don’t share personal information.'),
+    el('p', { className: 'comments-note' }, ''),
   );
   root.append(status, list, form);
 
@@ -170,10 +170,6 @@
         status.hidden = false;
       } else {
         form.hidden = false;
-        if (data.url) {
-          const link = el('a', { href: data.url, target: '_blank', rel: 'noopener' }, 'comment on GitHub');
-          form.append(el('p', { className: 'comments-note' }, 'Leadership can ', link, ' to show as verified.'));
-        }
       }
     } catch {
       status.textContent = UNAVAILABLE;

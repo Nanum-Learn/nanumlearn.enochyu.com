@@ -1,0 +1,20 @@
+{{ with hugo.Data.popup }}
+{{ if ne .link.url $.RelPermalink }}
+<dialog class="popup" id="popup" data-id="{{ .id }}" data-until="{{ .until }}" aria-labelledby="popup-title">
+  <div class="popup-box" tabindex="-1" autofocus>
+    <button type="button" class="popup-close" aria-label="Close">&#x2715;</button>
+    <p class="popup-label">{{ .label }}</p>
+    <h2 id="popup-title">{{ .title }}</h2>
+    <div class="popup-details">
+      {{ range .details }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <div class="popup-actions">
+      <a href="{{ .action.url }}" class="popup-action ext" target="_blank" rel="noopener">{{ .action.label }}</a>
+      <a href="{{ .link.url }}" class="more">{{ .link.label }}</a>
+    </div>
+  </div>
+</dialog>
+{{ $popup := resources.Get "js/popup.js" }}
+<script src="{{ $popup.RelPermalink }}" defer></script>
+{{ end }}
+{{ end }}

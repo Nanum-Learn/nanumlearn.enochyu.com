@@ -58,7 +58,7 @@
   padding: 0;
   border: 0;
   background: none;
-  color: var(--accent);
+  color: var(--highlight);
   font: inherit;
   font-size: 15px;
   font-weight: 500;
@@ -103,7 +103,6 @@
 }
 
 .comment-form .btn {
-  border: 0;
   font: inherit;
   font-weight: 500;
   cursor: pointer;
@@ -126,16 +125,16 @@
   overflow: hidden;
 }
 
-.comment-check {
-  margin-top: 8px;
+.comment-check:empty {
+  display: none;
 }
 
 .comment-actions {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
-  margin-top: 8px;
 }
 
 .comment-actions .comment-action {

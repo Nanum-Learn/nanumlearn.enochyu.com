@@ -10,14 +10,21 @@
 		
 		
 		
-			<lastBuildDate>Sun, 16 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://nanumlearn.enochyu.com/news/index.xml" rel="self" type="application/rss+xml" />
 			<item>
+				<title>Join our first Nanum Session on November 3rd!</title>
+				<link>https://nanumlearn.enochyu.com/news/nl01chem01/</link>
+				<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+				<guid>https://nanumlearn.enochyu.com/news/nl01chem01/</guid>
+				<description>&lt;p&gt;Hi, we are very excited to share that we will be hosting our first&#xA;Nanum session starting November 3rd! NL01CHEM01 will be lead&#xA;by our Vice President William Kang, and we have very excited&#xA;activities prepared as well!&lt;/p&gt;&#xA;&lt;p&gt;We hope to see 6th to 9th grade students interested in exploring&#xA;more into Cheimstry. Our sessions will be held &lt;strong&gt;every Tuesday&#xA;10 PM - 11 PM (GMT+9) for four weeks&lt;/strong&gt;. Below are some of the&#xA;contents that we will discuss in our session.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>We are here!</title>
-				<link>https://nanumlearn.enochyu.com/news/26005/</link>
+				<link>https://nanumlearn.enochyu.com/news/init/</link>
 				<pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>https://nanumlearn.enochyu.com/news/26005/</guid>
+				<guid>https://nanumlearn.enochyu.com/news/init/</guid>
 				<description>&lt;p&gt;Hi there! As the initial post, I hope to provide a glimpse on what&#xA;we have been doing so far and few improvements that will be made as&#xA;we progress.&lt;/p&gt;&#xA;&lt;p&gt;After the initialization and formalizing our purpose and goals,&#xA;I have been making and designing this website. There are improvements&#xA;to be made in the website, but we hope to get them as we progress.&#xA;With the empty website, I have been adding the resources that I have&#xA;created and that I am working on right now as the initial start.&#xA;We also have been sharing our ideas and the purpose of Nanum Learn&#xA;with others to receive feedback and improve. These are the works that&#xA;have been done so far before the initial release.&lt;/p&gt;</description>
 			</item>
 	</channel>
