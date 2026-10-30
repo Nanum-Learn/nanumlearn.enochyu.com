@@ -37,8 +37,7 @@
   margin-top: 20px;
 }
 
-.block,
-.giscus {
+.block {
   max-width: 720px;
   margin-top: clamp(56px, 8vw, 96px);
 }

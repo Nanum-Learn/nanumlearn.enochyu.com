@@ -5,6 +5,15 @@ title = 'Nanum Learn'
 enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 
+[outputs]
+  home = ["html", "rss", "threads"]
+
+[outputFormats.threads]
+  mediaType = "application/json"
+  baseName = "comment-threads"
+  isPlainText = true
+  notAlternative = true
+
 [params]
 author = "Enoch Yu"
 favicon = "/img/favicon/favicon.ico"
@@ -12,6 +21,10 @@ favicon = "/img/favicon/favicon.ico"
     youtube = "https://www.youtube.com/@enochyu_official"
     discord = "https://discord.gg/6ABSqUf63"
     github = "https://github.com/Nanum-Learn"
+  [params.comments]
+    api = "https://nanumlearn.enochyu.com/api/comments"
+    site = "nanumlearn"
+    turnstile = "0x4AAAAAAFsYp2Nsr1n9RUic"
 
 [security]
   allowContent = ['^text/html$', '^text/markdown$']

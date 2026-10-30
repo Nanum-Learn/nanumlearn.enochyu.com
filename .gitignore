@@ -3,6 +3,9 @@
 .hugo_build.lock
 
 .wrangler
+.dev.vars*
+*.pem
 node_modules/
+.misc
 
 
