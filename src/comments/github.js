@@ -7,8 +7,8 @@ const HEADERS = { Accept: 'application/vnd.github+json', 'User-Agent': 'nanum-co
 const COMMENT = 'id createdAt isMinimized body author { __typename login ... on User { databaseId } }';
 
 export const QUERIES = {
-  repository: `query($owner: String!, $repo: String!, $category: String!) {
-    repository(owner: $owner, name: $repo) { id discussionCategory(slug: $category) { id } }
+  repository: `query($owner: String!, $repo: String!) {
+    repository(owner: $owner, name: $repo) { id discussionCategories(first: 25) { nodes { id slug } } }
   }`,
   discussions: `query($owner: String!, $repo: String!, $category: ID!, $after: String) {
     repository(owner: $owner, name: $repo) {
@@ -116,11 +116,11 @@ async function repository(env) {
     const data = await graphql(env, 'read', QUERIES.repository, {
       owner: GITHUB.owner,
       repo: GITHUB.repo,
-      category: GITHUB.category,
     });
     const id = data.repository?.id;
-    const category = data.repository?.discussionCategory?.id;
-    if (!id || !category) throw new Failure(503, 'github_repository');
+    const categories = data.repository?.discussionCategories?.nodes ?? [];
+    const category = categories.find(node => node.slug === GITHUB.category)?.id;
+    if (!id || !category) throw new Failure(503, `github_repository:${categories.length}`);
     repositories.set(key, { id, category });
   }
   return repositories.get(key);
