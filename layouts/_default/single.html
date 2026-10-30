@@ -10,6 +10,10 @@
       <dd>{{ .Params.author }}</dd>
       <dt>Status</dt>
       <dd>{{ if eq .Params.status "WIP" }}In progress · Updated {{ $date }}{{ else }}{{ .Params.status }} · {{ $date }}{{ end }}</dd>
+      {{ with .Params.time }}
+      <dt>Time</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
       {{ with .Params.classnum }}
       <dt>Classes</dt>
       <dd>{{ . }}</dd>

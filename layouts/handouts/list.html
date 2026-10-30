@@ -7,7 +7,23 @@
 <section class="section" id="{{ .id }}">
   <div class="wrap">
     <h2 class="title">{{ .title }} <span>({{ $count }})</span></h2>
-    {{ partial "handouts.html" $groups }}
+    <ul class="rows">
+      {{ range $groups }}
+      {{ $parts := split .date " " }}
+      {{ $date := time.AsTime (printf "%02d %s %s" (int (index $parts 0)) (substr (index $parts 1) 0 3) (index $parts 2)) }}
+      {{ range .links }}
+      <li>
+        <div class="handout-row">
+          <a href="{{ .pdf }}" class="ext" target="_blank" rel="noopener">{{ .label }}</a>
+          <div class="handout-end">
+            <a href="{{ .tex }}" class="ext" target="_blank" rel="noopener">TeX (Git)</a>
+            <time datetime="{{ $date.Format "2006-01-02" }}">{{ $date.Format "January 2, 2006" }}</time>
+          </div>
+        </div>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
   </div>
 </section>
 {{ end }}

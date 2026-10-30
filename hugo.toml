@@ -3,6 +3,7 @@ locale = 'en-us'
 title = 'Nanum Learn'
 
 enableRobotsTXT = true
+buildFuture = true
 disableKinds = ["taxonomy"]
 
 [outputs]

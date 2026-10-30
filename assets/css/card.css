@@ -21,7 +21,6 @@
   border-radius: var(--radius);
   background: var(--bg);
   color: var(--text);
-  transition: transform var(--ease), box-shadow var(--ease), border-color var(--ease);
 }
 
 .card h3 {
@@ -33,9 +32,13 @@
   color: var(--muted);
 }
 
+.card .meta {
+  color: var(--accent);
+}
+
 .cta {
   margin-top: auto;
-  color: var(--accent);
+  color: var(--highlight);
   font-weight: 500;
 }
 
@@ -53,26 +56,17 @@
   line-height: 1.2;
 }
 
-.zoom a.card > * {
+a.card > * {
   transform-origin: left;
   transition: transform var(--ease);
 }
 
 @media (hover: hover) {
   a.card:hover {
-    border-color: var(--muted);
-    box-shadow: 0 24px 48px -20px rgb(0 0 0 / 0.2);
     text-decoration: none;
-    transform: translateY(-4px);
   }
 
-  .zoom a.card:hover {
-    border-color: var(--line);
-    box-shadow: none;
-    transform: none;
-  }
-
-  .zoom a.card:hover > * {
+  a.card:hover > * {
     transform: scale(1.05);
   }
 }
