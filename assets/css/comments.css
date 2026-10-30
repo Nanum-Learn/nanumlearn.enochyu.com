@@ -1,0 +1,143 @@
+.comments-note {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.comment-list {
+  padding: 0;
+  list-style: none;
+}
+
+.comment {
+  padding-block: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.comment-list > .comment:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.comment-meta {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.comment-meta strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.comment-verified {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.comment-text {
+  margin-top: 6px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.comment-replies {
+  margin-top: 16px;
+  padding-left: 20px;
+  border-left: 2px solid var(--line);
+}
+
+.comment-replies > .comment {
+  padding-block: 12px;
+  border: 0;
+}
+
+.comment-replies > .comment:first-child {
+  border: 0;
+}
+
+.comment-action {
+  margin-top: 8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.comment-action:hover {
+  text-decoration: underline;
+}
+
+.comment-form {
+  display: grid;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.comment-form label {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.comment-form textarea {
+  resize: vertical;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.comment-form .btn {
+  border: 0;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.comment-form .btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.comment-replying {
+  font-weight: 500;
+}
+
+.comment-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.comment-check {
+  margin-top: 8px;
+}
+
+.comment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.comment-actions .comment-action {
+  margin-top: 0;
+}

@@ -1,16 +1,8 @@
-<section class="giscus"></section>
-<script src="https://giscus.app/client.js"
-        data-repo="enochyu-official/NanumLearn"
-        data-repo-id="R_kgDOT8Ajtg"
-        data-category="General"
-        data-category-id="DIC_kwDOT8Ajts4DDnw6"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+{{ with site.Params.comments }}
+<section class="block comments mathjax_ignore tex2jax_ignore" id="comments" data-api="{{ .api }}" data-site="{{ .site }}" data-path="{{ $.RelPermalink }}" data-sitekey="{{ .turnstile }}">
+  <h2>Comments</h2>
+  <noscript><p class="comments-note">Comments need JavaScript.</p></noscript>
+</section>
+{{ $comments := resources.Get "js/comments.js" }}
+<script src="{{ $comments.RelPermalink }}" defer></script>
+{{ end }}
