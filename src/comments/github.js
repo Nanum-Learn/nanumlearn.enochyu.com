@@ -103,7 +103,10 @@ async function graphql(env, level, query, variables) {
   if (result.errors?.some(error => error.type === 'RATE_LIMITED')) {
     throw new Failure(503, 'github_limited', undefined, LIMITS.pauseSeconds);
   }
-  if (result.errors?.length || !result.data) throw new Failure(503, 'github_graphql');
+  if (result.errors?.length || !result.data) {
+    const [first] = result.errors ?? [];
+    throw new Failure(503, `github_graphql:${first?.type ?? 'none'}:${first?.path?.join('.') ?? ''}`);
+  }
   return result.data;
 }
 
