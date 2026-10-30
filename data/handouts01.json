@@ -4,8 +4,8 @@
     "links": [
       {
         "label": "Desargues' Theorem",
-        "pdf": "https://archive.enochyu.com/mathematics/pdf/25062.pdf",
-        "tex": "https://github.com/enochyu-official/archive.enochyu.com/blob/main/static/mathematics/tex/25062.zip"
+        "pdf": "https://archive.enochyu.com/a/pdf/A25062.pdf",
+        "tex": "https://github.com/enochyu-official/Archive/blob/main/A/tex/A25062.zip"
       }
     ]
   },
@@ -14,8 +14,8 @@
     "links": [
       {
         "label": "Trigonometric Identities",
-        "pdf": "https://archive.enochyu.com/mathematics/pdf/25007.pdf",
-        "tex": "https://github.com/enochyu-official/archive.enochyu.com/blob/main/static/mathematics/tex/25007.tex"
+        "pdf": "https://archive.enochyu.com/a/pdf/A25007.pdf",
+        "tex": "https://github.com/enochyu-official/Archive/blob/main/A/tex/A25007.tex"
       }
     ]
   },
@@ -24,8 +24,8 @@
     "links": [
       {
         "label": "Lucas's Theorem",
-        "pdf": "https://archive.enochyu.com/mathematics/pdf/25004.pdf",
-        "tex": "https://github.com/enochyu-official/archive.enochyu.com/blob/main/static/mathematics/tex/25004.tex"
+        "pdf": "https://archive.enochyu.com/a/pdf/A25004.pdf",
+        "tex": "https://github.com/enochyu-official/Archive/blob/main/A/tex/A25004.tex"
       }
     ]
   }
